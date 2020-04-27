@@ -1,6 +1,6 @@
 ## System operacyjny w środowisku sieciowym
 
-### Zadania
+☻### Zadania
 
 
 1. Z wykorzystaniem maszyny wirtualnej, zainstaluj SO oraz wypisz parametry konfiguracji IP tj:
@@ -34,36 +34,28 @@
 
 ### Charakterystyka systemu operacyjnego
 
-| Charakterystyka           | wartość               | komentarzu                |
+| Charakterystyka           | wartość               | komentarz                |
 | -------------             |:-------------:        | -----:                    |
-| nazwa                     | linux                 | centos 7                  |
-| cfg interfejsów           | centos 7 | /etc/sysconfig/network-scripts         |
-| program (parametry sieci) | niewiem               |                           |
-| ....                      | .....                 |                           |
-| nazwa                     | Alpine Linux          |                           |
-| Konfiguracja ip           | ``$ ip all ``         | show all eth interfaces   | 
-| Tablica routingu          | ``$ ip route show ``  | what is gateway?!         | 
-| check nameservers (DNS)   | ``$ cat /etc/resolv.conf ``  | which DNS were set | 
+| nazwa                     | linux                 | debian 10                  |
+| cfg interfejsów           | /etc/network/interfaces | debian 10         |
+| Konfiguracja ip           | ``$ ip addr ``         | shows all eth interfaces   | 
+| Tablica routingu          | ``$ ip route show ``  |     | 
+| check nameservers (DNS)   | ``$ cat /etc/resolv.conf ``  |     | 
 
 ### Konfiguracja połączenia sieciowego
 
-| Parametr | wartość           | komentarzu |
+| Parametr | wartość           | komentarz |
 | ------------- |:-------------:| -----:|
-| Adres IP      | 10.0.2.15        | przydzielony przez DHCP |
-| Maska podsieci| 10.0.2.15/**24** | **255.255.255.0**    |
-| Brama         | 10.0.2.2         | default from route table |
-| DNS 1         | 10.10.4.204      | cat /etc/resolv.conf     |
-| DNS 2         | 1.1.1.1          | nslookup uek.krakow.pl   |
+| Adres IP      | 192.168.241.129        | przydzielony przez DHCP |
+| Maska podsieci| 192.168.241.129/**24** | **255.255.255.0**    |
+| Brama         | 192.168.241.2         | default from route table |
+| DNS 1         | 192.168.241.2      | cat /etc/resolv.conf     |
 
-### Schemat sieci
+### Charakterystyka urządzenia w sieci domowej
 
-aby załączyć obrazek 
-
-```markdown
-![alt schemat](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png)![alt schemat](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png)
-
-![alt schemat](images/my-network-schema.png)
-```
-
-![my network](network.png)
-
+| Parametr | wartość           | komentarz |
+| ------------- |:-------------:| -----:|
+| Adres IP      | 10.71.196.0        | przydzielony przez DHCP |
+| Maska podsieci| 192.168.241.129/**20** | **255.255.240.0**    |
+| Brama         | 10.71.192.1         | default from route table |
+| DNS 1         | 217.113.224.135      |  ipconfig /all     |
