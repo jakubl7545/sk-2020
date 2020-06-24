@@ -2,17 +2,17 @@
 ## Konfiguracja interfejsów sieciowych
 ### PC1
 plik konfiguracyjny - /etc/network/interfaces
-# WAN
+\# WAN
 auto eth0
 iface eth0 inet dhcp
-# LAN 1
+\# LAN 1
 auto eth1
 iface eth1 inet static
 address 192.168.0.1
 netmask 255.255.252.0
 ### PC2
 plik konfiguracyjny - /etc/network/interfaces
-# LAN 1
+\# LAN 1
 auto eth0
 iface eth0 inet dhcp
 
@@ -40,7 +40,7 @@ plik konfiguracyjny - /etc/hosts
 ## NAT
 Włączenie przekazywania pakietów między interfejsami
 plik konfiguracyjny - /etc/sysctl.conf
-# Uncomment the next line to enable packet forwarding for IPv4
+\# Uncomment the next line to enable packet forwarding for IPv4
 net.ipv4.ip_forward=1
 instalacja pakietu - apt-get install iptables
 Włączenie NAT
